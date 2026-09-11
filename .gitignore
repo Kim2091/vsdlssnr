@@ -1,0 +1,17 @@
+# Build output
+build/
+out/
+*.dll
+*.exp
+*.lib
+*.pdb
+*.obj
+*.ilk
+
+# The DLSS-NR snippet is NVIDIA proprietary and is never redistributed here.
+nvngx_dlssnr.dll
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
