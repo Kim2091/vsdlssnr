@@ -338,3 +338,13 @@ This licence covers **this repository's own source only**. It grants nothing wit
 NVIDIA's software. The NGX SDK, and `nvngx_dlssnr.dll` itself, are NVIDIA proprietary, are not
 redistributed here, and remain governed by your own agreements with NVIDIA — see
 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) before you build a binary for anyone else.
+
+## Vapourkit filter package
+
+The matching filter is included in `vapourkit/` and copied beside the built DLL.
+Copy `DLSS Neural Uplift.vkfilter` into Vapourkit's `include/plugins/plugin_filters/`
+folder. Restart Vapourkit and add DLSS Neural Uplift to the filter chain.
+
+After building, run `./package.ps1` to create `out/vsdlssnr.zip` containing the
+plugin, filter, README, license and third-party notices. Supply the NVIDIA runtime
+separately, following the requirements above.

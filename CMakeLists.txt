@@ -99,3 +99,8 @@ set_target_properties(vsdlssnr PROPERTIES
   OUTPUT_NAME "vsdlssnr"
   PREFIX ""
 )
+
+# Bundle the matching Vapourkit filter alongside the build.
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/vapourkit")
+configure_file("vapourkit/DLSS Neural Uplift.vkfilter"
+  "${CMAKE_CURRENT_BINARY_DIR}/vapourkit/DLSS Neural Uplift.vkfilter" COPYONLY)
